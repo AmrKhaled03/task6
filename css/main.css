@@ -1,0 +1,444 @@
+/* main things */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* end */
+body{
+    font-family: 'Noto Naskh Arabic', serif;
+
+}
+    /* start navbar */
+
+       
+    
+  header{
+      width: 100%;
+      background-color: #444;
+     height: 60px;
+     font-family: 'Noto Naskh Arabic', serif;
+  padding:  0 10px;
+       position:fixed;
+       z-index: 1000;
+  }
+  header .navbar {
+      width: 100%;
+      height: 100%;
+      /* margin: 0 auto; */
+  
+      display: flex;
+     
+      justify-content: space-between;
+ align-items: center;
+  }
+
+  header .navbar   ul {
+      display: flex;
+     align-items: center;
+ justify-content: center;
+  list-style: none;
+  } 
+
+  header .navbar ul li a{
+    color: white;
+    padding:  0 15px;
+   border: 0;
+      text-decoration: none;
+      font-family: 'Noto Naskh Arabic', serif;
+      font-size: 18px;
+      line-height: 1.5;
+      cursor: pointer;
+      height: 100%;
+      width: fit-content;
+  }
+  header .navbar ul li a:hover{
+    background-color: rgb(135 ,135 ,135);
+   height: fit-content;
+
+  }
+  header .navbar .linksone ul li a img{
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+margin-top: 10px;
+
+  }
+  header .navbar .linksone  ul li a i{
+   color: white;
+      width: 50px;
+      height: 50px;
+      margin-top: 40%;
+      font-size: 20px;
+  }
+  header .navbar .linkstwo ul li a img{
+      height: 36px;
+      border: 0;
+  }
+
+      /*end navbar  */
+
+      /* start landing */
+.main{
+background: url(../imgs/hero-33cc6eb8f1a98f8aacf154a4ff4c5f76d5610553e8ba4accb6d22515a64a184a.jpg) no-repeat;
+
+background-size: 100% 100%;
+width: 100%;
+height: 100vh;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+ color:black;
+ 
+}
+.main .content{
+    position: relative;
+}
+.main .content h1{
+    font-size: 40px;
+}
+.main .content p {
+   
+    font-size: 20px;
+
+
+}
+.main .content .form-control{
+   
+  padding:  24px 250px;
+margin-top: 50px;
+border: 1px solid green;
+
+
+}
+.main .content .btn{
+    padding:  13px 22px;
+    /* width: 80px;
+    height: 20%; */
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-color: #52b035;
+    background: #52b035;
+    position: absolute;
+top: 93%;
+left: 8%;
+transform: translate(-50% , -90%);
+
+}
+
+.main .content .btn:hover{
+    background-color: green;
+}
+
+      /* endlanding */
+
+
+
+/* start cards */
+.cards{
+     display: flex;
+height: 70vh;
+     flex-wrap: wrap; 
+ width: 100%;
+    /* margin: 25px 70px 150px ; */
+    padding: 30px;
+   
+}
+ .title h2{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 85px;
+  margin-right: 5px;
+}
+.cards .category{
+    
+ width: 25%;
+margin-top: 20px ;
+padding: 5px 10px 10px;
+position: relative;
+}
+.cards .category img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+
+}
+
+.cards .category h5{
+    position: absolute;
+    color: white;
+   top: 50%;
+   left: 50%;
+   font-size: 22px;
+ transform: translate(-50%, -50%);
+ z-index: 1;
+}
+/* end cards */
+/* start works */
+.work-sec{
+    width: 100%;
+  padding: 54px 70px 100px;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}
+.work-sec .works{
+    margin: 20px 0;
+    width: 100%;
+}
+.work-sec .works .title{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.work-sec .works .title a{
+    text-decoration: none;
+    padding: 10px 11px;
+    font-size: 18px;
+    border: 1px solid green;
+    color: green;
+    transition: .25s linear;
+}
+.work-sec .works .title a:hover{
+    background-color: green;
+    color: white;
+}
+.work-sec .works .title p{
+    font-size: 20px;
+    
+    font-weight: 500;
+}
+.work-sec .works .services{
+
+ display: flex;
+
+    align-items: center;
+    justify-content:center ;
+}
+.work-sec .works .services .service{
+         width: 25%;
+    margin: 20px 10px;
+    height: 330px;
+    padding: 5px;
+}
+.work-sec .works .services .service img{
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.work-sec .works .services .service a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  margin-bottom: 5px;
+    margin-top: 30px;
+}
+.work-sec .works .services .service a:hover{
+    color: #52b035;
+}
+.work-sec .works .services .service p{
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.work-sec .works .services .service i{
+    color: #ffa347;
+    font-size: 14px;
+}
+.work-sec .works .services .service .price{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.work-sec .works .services .service .price span{
+    font-size: 18px;
+  
+}
+/* end */
+
+
+
+
+/* start footer */
+.footer{
+
+    background-color: white;
+        width: 100%;
+      padding: 50px 30px;
+    margin-top: 30px;
+        
+    }
+ 
+    
+    .footer .desc{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+    margin-right: 100px;
+    
+    
+    }
+    .footer .desc .develop{
+        padding-top: 20px;
+        padding-bottom: 10px;
+      /* margin: 0 20px; */
+    }
+    .footer .desc .develop h3{
+        margin-left: 10px;
+    }
+    .footer .desc .develop ul li{
+        list-style-type: none;
+        padding: 10px;
+        
+    }
+  
+    .footer .desc .develop ul li  a .fa-facebook-f{
+       border: 1px solid;
+       background-color: #0d6efd;
+       color: white;
+       padding: 5px 8px;
+       font-size: 25px;
+       vertical-align: middle;
+    }
+    .footer .desc .develop ul li a .fa-twitter{
+        border: 1px solid;
+
+background-color: rgb(85, 172, 238);
+        color: white;
+        padding: 5px 7px;
+        font-size: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+     }
+    .footer .desc .develop ul li a{
+        text-decoration: none;
+        color: green;
+    cursor: pointer;
+    }
+ 
+    .footer .desc .develop ul li a:active{
+        color: red;
+    }
+    .footer .desc .develop .pay{
+        margin-top: 50px;
+    }
+    .footer .desc .develop .pay i {
+font-size: 40px;
+margin-top: 20px;
+opacity: .7;
+    }
+
+
+footer{
+    width: 100%;
+}
+    footer .footer-top {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 30px;
+        padding: 50px 50px;
+          display: flex;
+          margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer .footer-top h5{
+        color: #777;
+    }
+    footer .footer-top  a{
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0 10px;
+        color: #444;
+    }
+    footer .footer-bottom{
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+    footer .footer-bottom .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 0 20px;
+    } 
+       footer .footer-bottom .logo img{
+    height: 40px;
+    }
+.links-bottom{
+    display: flex;
+    padding: 20px 80px;
+    flex-wrap: wrap;
+}
+.links-bottom .item{
+    padding: 12px 0;
+    width: 165px;
+    margin: 10px;
+}
+.links-bottom .item h2{
+    font-size: 13px;
+    line-height: 0;
+}
+.links-bottom .item a{
+    text-decoration: none;
+    color: #777;
+    font-size: 10px;
+}
+
+    /* end footer */
+
+      @media(max-width:768px){
+     
+        body {
+            background:#fff
+        }
+        .main .content .form-control{
+         width: 50%;
+        }  
+        .main .content .btn{
+            top: 94%;
+            left: 15%;
+        }
+        .cards .category{
+    
+            width: 50%;
+           margin-top: 30px ;
+           padding: 10px;
+           position: relative;
+           }
+           .title h2{
+      margin: 30px auto 5px;
+      font-size: 33px;
+           }
+           .footer,
+           footer,
+           .no{
+               display: none;
+           }
+           .work-sec{
+               margin: 500px 0 0 0;
+width: 100%;
+           }
+           .work-sec .works {
+               margin-top: 150px;
+
+           }
+  
+           
+      }
